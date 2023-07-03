@@ -4,5 +4,5 @@
  the future of our species!
 
  Currently, the script only prints out information to the console, but I plan to incorporate
- the Twitters API to tweet out the information on a daily basis. You know, to keep the
+ the Twitter API to tweet out the information on a daily basis. You know, to keep the
  optimisim going.
