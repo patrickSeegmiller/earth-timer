@@ -43,6 +43,8 @@ year = re.findall(r'\d{2,4}', prediction[0])
 # on our part. :D
 if len(year) > 1:
     year = year[-1]
+elif len(year) == 0:
+    sys.exit()
 else:
     year = year[0]
 
@@ -66,7 +68,9 @@ protected_words = ['Jesus', 'Christ', 'God', 'Allah', 'Jehovah', 'Yahweh', 'Budd
                         'Shintoism', 'Confucianism', 'Confucian', 'Taoism', 'Taoist', 'Zoroastrianism',
                         'Zoroastrian', 'Jainism', 'Jain', 'Bahai', 'Bahaiism', 'Bahaii', 'Bahaiiism',
                         'Atheism', 'Atheist', 'Agnostic', 'Agnosticism', 'Deism', 'Deist', 'Pagan',
-                        'Paganism', 'Wicca', 'Wiccan'
+                        'Paganism', 'Wicca', 'Wiccan' 'Jehovahs', 'Jehovah\'s', 'Jehovahs\'', 'Christians',
+                        'Jews', 'Muslims', 'Catholics', 'Protestants', 'Hindus', 'Buddhists', 'Sikhs',
+                        'Shintos', 'Confucians', 'Taoists', 'Zoroastrians', 'Jains', 'Bahais', 'Atheists'
 ]
 
 # If the predictor is contained in the protected words list, randomly select a new one
